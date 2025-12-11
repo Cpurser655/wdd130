@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cole's Portfolio Portal</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+            <a href="index.html"><img src="images/logo.png" alt="A blue and green water dragon behind letters: CP"></a>
+            <h1>Cole Purser's Portal</h1>
+        </header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="wwr/index.html">WWR</a>
+            <a href="ice.html">ICE</a>
+            <a href="#">Project</a>
+            <a href="aboutme.html">About</a>
+        </nav>
+        <main style="display: block;">
+            <h2>Final Project Report</h2>
+            <hr>
+            <h3>Client Report</h3>
+            <p></p>
+            <h3>Lead Dev Report</h3>
+            <p></p>
+            <h3>Jr. Dev Report</h3>
+            <p></p>
+            <h3>Experience and Reflections</h3>
+            <p></p>
+        </main>
+        <section id="ads">
+            <form action="#" method="post" autocomplete="on">
+                <div>
+                    <label for="first-name">First Name</label>
+                    <input type="text" id="first-name" name="first_name" required>
+                </div>
+
+                <div>
+                    <label for="last-name">Last Name</label>
+                    <input type="text" id="last-name" name="last_name" required>
+                </div>
+
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <fieldset>
+                    <legend>Gender</legend>
+                    <label>
+                        <input type="radio" name="gender" value="male" required> Male
+                    </label>
+                    <label>
+                        <input type="radio" name="gender" value="female"> Female
+                        </label>
+                </fieldset>
+
+                <div>
+                    <label for="country">Country</label>
+                    <select id="country" name="country" required>
+                        <option value="" selected disabled>Select your country</option>
+                        <option value="us">United States</option>
+                        <option value="ca">Canada</option>
+                        <option value="uk">United Kingdom</option>
+                        <option value="au">Australia</option>
+                        <option value="de">Germany</option>
+                        <option value="in">India</option>
+                        <option value="jp">Japan</option>
+                    </select>
+                </div>
+
+                <fieldset>
+                    <legend>Elemental Ability</legend>
+                    <label>
+                        <input type="checkbox" name="Ability[]" value="Air"> Air
+                    </label>
+                    <label>
+                        <input type="checkbox" name="Ability[]" value="Water"> Water
+                    </label>
+                    <label>
+                        <input type="checkbox" name="Ability[]" value="Earth"> Earth
+                    </label>
+                    <label>
+                        <input type="checkbox" name="Ability[]" value="Fire"> Fire
+                    </label>
+                </fieldset>
+                    <div>
+                        <label for="notes">Notes</label>
+                        <textarea id="notes" name="notes" rows="4" cols="40"
+                            placeholder="Anything else you'd like to add?"></textarea>
+                    </div>
+
+                    <div>
+                        <button type="submit">Submit</button>
+                    </div>
+                </form>
+            </section>
+        </main>
+        <footer>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="wwr/index.html">WWR</a></li>
+                <li><a href="ice.html">ICE</a></li>
+                <li><a href="#">Project</a></li>
+            </ul>
+
+            <p>Copyright Cole Purser 2025 &copy;</p>
+        </footer>
+
+    </div>
+</body>
+
+</html>
