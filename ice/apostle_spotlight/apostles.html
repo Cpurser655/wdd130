@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apostles Spotlights</title>
+    <style>
+        
+        body {
+            background: #e8eced
+        }
+
+        #container {
+            height: 700px;
+            width: 900px;
+            margin: 0 auto;
+            background: #1B5882 url("images/christus.webp") -270px 0px;
+            border: 10px solid black;
+            border-radius: 20px;
+            background-size: cover;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 0 50px 50px 50px;
+        }
+
+        .spotlight {
+            height: 100px;
+            width: 100px;
+            border: 10px solid white;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+
+        .spotlight img {
+            width: 100px
+        }
+
+        .spotlight:hover {
+            opacity: .9;
+            transform: scale(1.1);
+        }
+        
+        #presidency {
+            color: white;
+            text-align: center;
+            font-size: 2em;
+            font-weight: 700;
+        }
+
+        #oaks {
+            height: 120px;
+            width: 120px;
+            border: 10px solid white;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+
+        #oaks img {
+            width: 120px;
+        }
+
+        h1 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            margin: 0 200px;
+            grid-gap: 10px;
+            align-items: center;
+            justify-items: center;
+        }
+
+        h2 {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            margin: 0 150px;
+            grid-gap: 10px;
+            align-items: center;
+            justify-items: center;
+        }
+        
+        #Quorum {
+            color: white;
+            text-align: center;
+            font-size: 1.5em;
+            font-weight: 500;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="container">
+        <header>
+            <p id="presidency">First Presidency</p>
+            <h1>
+                <div class="spotlight"><img src="images/eyring.webp" alt="President Henry B. Eyring"></div>
+                <div id="oaks" class="spotlight"><img src="images/oaks.webp" alt="President Dallin H. Oaks"></div>
+                <div class="spotlight"><img src="images/christofferson.webp" alt="President D. Todd Christofferson"></div>
+            </h1>
+        </header>
+        <main>
+            <p id="Quorum">Quorum of the Twelve Apostles</p>
+            <h2>
+                <div class="spotlight"><img src="images/holland.webp" alt="President Jeffry R. Holland"></div>
+                <div class="spotlight"><img src="images/uchtdorf.webp" alt="Elder Dieter F. Uchtorf"></div>
+                <div class="spotlight"><img src="images/bednar.webp" alt="Elder David A. Bednar"></div>
+                <div class="spotlight"><img src="images/cook.webp" alt="Elder Quentin L. Cook"></div>
+                <div class="spotlight"><img src="images/anderson.webp" alt="Elder Neil L. Andersen"></div>
+                <div class="spotlight"><img src="images/rasband.webp" alt="Elder Ronald A. Rasband"></div>
+                <div class="spotlight"><img src="images/stevenson.webp" alt="Elder Gary E. Stevenson"></div>
+                <div class="spotlight"><img src="images/renlund.webp" alt="Elder Dale G. Renlund"></div>
+                <div class="spotlight"><img src="images/gong.webp" alt="Elder Gerrit W. Gong"></div>
+                <div class="spotlight"><img src="images/soares.webp" alt="Elder Ulisses Soares"></div>
+                <div class="spotlight"><img src="images/kearon.webp" alt="Elder Patrick Kearon"></div>
+                <div class="spotlight"><img src="images/causse.jpeg" alt="Elder Gerald Causse"></div>
+            </h2>
+        </main>
+    </div>
+</body>
+</html>

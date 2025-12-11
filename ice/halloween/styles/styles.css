@@ -1,0 +1,157 @@
+/* =========================
+   HALLOWEEN THEME STYLES v6
+   Clean – No Slime
+   ========================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Creepster&family=Open+Sans:wght@400;600&display=swap');
+
+:root {
+  --orange: #ff7518;
+  --purple: #3c1361;
+  --green: #50fa7b;
+  --black: #0d0d0d;
+  --white: #f4f4f4;
+}
+
+body {
+    background: #00223F url("../images/web.jpg") repeat;
+}
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: radial-gradient(circle at top, #1a001f, #000);
+  color: var(--white);
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* Wrapper */
+#wrapper {
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header / Nav Bar */
+header {
+  background: linear-gradient(90deg, var(--purple), var(--black));
+  border-bottom: 3px solid var(--orange);
+  border-radius: 10px 10px 0 0;
+  box-shadow: 0 0 20px rgba(80, 250, 123, 0.3);
+  position: relative;
+}
+
+/* Navigation Links */
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 10px 0;
+}
+
+nav li {
+  margin: 0 15px;
+  font-weight: 600;
+  color: var(--green);
+  cursor: pointer;
+  text-shadow: 0 0 10px var(--green);
+  transition: transform 0.3s, text-shadow 0.3s, color 0.3s;
+}
+
+nav li:hover {
+  color: var(--orange);
+  transform: scale(1.15);
+  text-shadow: 0 0 15px var(--orange);
+}
+
+/* Main Area */
+main {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 30px;
+  border-radius: 0 0 10px 10px;
+  box-shadow: 0 0 15px rgba(255, 117, 24, 0.3);
+}
+
+/* Title Flicker */
+h1 {
+  font-family: 'Creepster', cursive;
+  font-size: 3rem;
+  color: var(--orange);
+  text-shadow: 0 0 15px var(--green), 3px 3px 5px var(--purple);
+  margin-bottom: 15px;
+  animation: flicker 2.5s infinite alternate;
+}
+
+@keyframes flicker {
+  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+    text-shadow: 0 0 15px var(--green), 0 0 25px var(--orange), 0 0 35px var(--purple);
+  }
+  20%, 24%, 55% { text-shadow: none; }
+}
+
+/* Section Titles */
+h2 {
+  color: var(--green);
+  font-family: 'Creepster', cursive;
+  margin-top: 25px;
+  text-shadow: 0 0 10px var(--green);
+}
+
+/* Image Styling */
+img {
+  width: 250px;
+  height: auto;
+  margin: 20px 0;
+  filter: drop-shadow(0 0 25px var(--orange)) hue-rotate(10deg);
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+/* Sections */
+section {
+  margin-top: 25px;
+  padding: 15px;
+  background-color: rgba(60, 19, 97, 0.3);
+  border: 1px solid var(--purple);
+  border-left: 5px solid var(--green);
+  border-radius: 10px;
+  transition: transform 0.3s, background 0.3s, box-shadow 0.3s;
+}
+
+section:hover {
+  transform: scale(1.02);
+  background-color: rgba(255, 117, 24, 0.1);
+  box-shadow: 0 0 15px rgba(80, 250, 123, 0.4);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 15px;
+  font-size: 0.9rem;
+  color: var(--green);
+  text-shadow: 0 0 10px var(--green);
+  margin-top: 20px;
+  border-top: 1px solid var(--orange);
+  opacity: 0.9;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  nav ul { flex-direction: column; }
+  nav li { margin: 8px 0; }
+  img { width: 180px; }
+}

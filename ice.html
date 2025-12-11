@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cole's Portfolio Portal</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+             <a href="index.html"><img src="images/logo.png" alt="A blue and green water dragon behind letters: CP"></a>
+            <h1>Cole Purser's Portal</h1>
+        </header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="wwr/index.html">WWR</a>
+            <a href="ice.html">ICE</a>
+            <a href="#">Project</a>
+            <a href="aboutme.html">About</a>
+        </nav>
+        <main>
+            <div id="icecontent">
+                <section class="icecards">
+                    <a href="ice/prophet_cards/nelson.html" target="blank"><img src="images/ice cards/russell_nelson.png" alt="President Russel M. Nelson"></a>
+                    <h1>Description: A digital information card that describes the late Prophet, President Russel M. Nelson; along with a qoute</h1>
+                    <h1>Lesson: This assignment helped me practice more about how certain elements work together</h1>
+                </section>
+                <section class="icecards">
+                    <a href="ice/apostle_spotlight/apostles.html" target="blank"><img src="images/ice cards/christus.jpg" alt="The Christus Statue"></a>
+                    <h1>Description: A digital information card that shows circular photos of the Presidency and the Quorom of the 12 apostles</h1>
+                    <h1>Lesson: This assingment helped me to practice using grids more and orginizing images in a way that looked well</h1>
+                </section>
+                <section class="icecards">
+                    <a href="ice/favorite_devo/favdevo.html" target="blank"><img src="images/ice cards/icenter.png" alt="BYU-Idaho's I-Center Auditorium"></a>
+                    <h1>Description: A digital information card that shows Cole Purser's favorite devotionals</h1>
+                    <h1>Lesson: This assingment helped me to practice more with tables and how the elements in them work along with how forms can be used an made.</h1>
+                </section>
+                <section class="icecards">
+                    <a href="ice/halloween/index.html" target="blank"><img src="images/ice cards/halloween.png" alt="Skeletons and other Halloween Themed objects"></a>
+                    <h1>Description: A website created for the advertisment of different things that are involved with the holiday of Halloween</h1>
+                    <h1>Lesson: This assignment helped me create something that is fun and looks good in a timley manor. Even if I was helped alot by AI</h1>
+                </section>
+                <section class="icecards">
+                    <a href="ice/grid_flags/flags.html" target="blank"><img src="images/ice cards/earth_flag.jpg" alt="The Earth"></a>
+                    <h1>Description: A Website with different countries flags made by grid patterns and coloring</h1>
+                    <h1>Lesson: This assingment helped me even more with grids and how I can manipulate them to create certain patterns</h1>
+                </section>
+                <section class="icecards">
+                    <a href="ice/positioning/positioning.html" target="blank"><img src="images/ice cards/example6.png" alt="4 colored squares of varius sizes positioned around the image"></a>
+                    <h1>Description: A website with varius different exersises of positioning 4 colored squares around a given space</h1>
+                    <h1>Lesson: This Assingment helped me with posistioning. Not only with grids but also helped me remember past things such as z-index and float</h1>
+                </section>
+                <section class="icecards">
+                    <a href="ice/gallery/gallery.html" target="blank"><img src="images/ice cards/img2.png" alt="Jesus Christ"></a>
+                    <h1>Description: A information card with varius pictures of Jesus Christ</h1>
+                    <h1>Lesson: This assignment helped me visualize how I can help my websites be more effecient and load quicker</h1>
+                </section>
+                <section class="icecards">
+                    <a href="ice/signup/signup.html" target="blank"><img src="images/ice cards/book_of_mormon.jpg" alt="The Book of Mormon"></a>
+                    <h1>Description: A information card with a form for daily scripture subscription</h1>
+                    <h1>Lesson: This assignment helped me take everyhting I have learned before and put it all together to create this form</h1>
+                </section>
+            </div>
+
+            <section id="ads">
+                <form action="#" method="post" autocomplete="on">
+                    <div>
+                        <label for="first-name">First Name</label>
+                        <input type="text" id="first-name" name="first_name" required>
+                    </div>
+
+                    <div>
+                        <label for="last-name">Last Name</label>
+                        <input type="text" id="last-name" name="last_name" required>
+                    </div>
+
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <fieldset>
+                        <legend>Gender</legend>
+                        <label>
+                            <input type="radio" name="gender" value="male" required> Male
+                        </label>
+                        <label>
+                            <input type="radio" name="gender" value="female"> Female
+                        </label>
+                    </fieldset>
+
+                    <div>
+                        <label for="country">Country</label>
+                        <select id="country" name="country" required>
+                            <option value="" selected disabled>Select your country</option>
+                            <option value="us">United States</option>
+                            <option value="ca">Canada</option>
+                            <option value="uk">United Kingdom</option>
+                            <option value="au">Australia</option>
+                            <option value="de">Germany</option>
+                            <option value="in">India</option>
+                            <option value="jp">Japan</option>
+                        </select>
+                    </div>
+
+                    <fieldset>
+                        <legend>Elemental Ability</legend>
+                        <label>
+                            <input type="checkbox" name="Ability[]" value="Air"> Air
+                        </label>
+                        <label>
+                            <input type="checkbox" name="Ability[]" value="Water"> Water
+                        </label>
+                        <label>
+                            <input type="checkbox" name="Ability[]" value="Earth"> Earth
+                        </label>
+                        <label>
+                            <input type="checkbox" name="Ability[]" value="Fire"> Fire
+                        </label>
+                    </fieldset>
+
+                    <div>
+                        <label for="notes">Notes</label>
+                        <textarea id="notes" name="notes" rows="4" cols="40"
+                            placeholder="Anything else you'd like to add?"></textarea>
+                    </div>
+
+                    <div>
+                        <button type="submit">Submit</button>
+                    </div>
+                </form>
+            </section>
+        </main>
+        <footer>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="wwr/index.html">WWR</a></li>
+                <li><a href="ice.html">ICE</a></li>
+                <li><a href="#">Project</a></li>
+            </ul>
+
+            <p>Copyright Cole Purser 2025 &copy;</p>
+        </footer>
+
+    </div>
+</body>
+
+</html>

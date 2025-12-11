@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Maiden+Orange&display=swap');
+
+body {
+    background: #00223F url("../images/Swirl.jpg") repeat;
+    font-family: "Maiden Orange", Helvetica, sans-serif;
+}
+
+header {
+    background: url("../images/space.jpg") -750PX -195PX;
+}
+
+header img {
+    width: 178px;
+    float: left;
+}
+
+header h1 {
+    font-size: 4em;
+    color: #e2e2e2;
+    margin: 50px 80px 50px 112px;
+    text-shadow: 4px 4px 2px black;
+    justify-content: flex-end;
+}
+
+#wrapper {
+    max-width: 900px;
+    min-height: 1000px;
+    background: #1B5882;
+    margin: auto;
+    border: #00223f solid 5px;
+    border-radius: 20px;
+    overflow: hidden;
+    display: grid;
+    grid-template-rows: 178px 50px 2fr 120px;
+}
+
+nav {
+    background: #207033;
+    clear: both;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-content: center;
+    justify-items: center;
+    border-top: 5px solid #00223f;
+    border-bottom: 5px solid #00223f;
+    box-sizing: border-box;
+}
+
+nav a {
+    font-size: 2em;
+    color: #e2e2e2;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding: 0 40px;
+}
+
+nav a:hover {
+    background: #0d581e;
+    text-shadow: 4px 4px 2px #00223f;
+}
+
+#ads {
+    width: 250px;
+    background: #207033;
+    border: 4px solid #00223f;
+    border-radius: 20px;
+    text-align: center;
+    position: fixed;
+    right: -273px;
+    color: #e2e2e2;
+    padding: 20px;
+    transition: right .75s ease-out;
+}
+
+#ads:hover {
+    right: 0;
+    transition: right .85s ease-in;
+}
+
+footer {
+    background: url("../images/space.jpg") -25px -225px;
+    display: grid;
+    grid-template-columns: .6fr 1fr;
+    justify-content: center;
+    color: white;
+    text-shadow: 4px 4px 2px black;
+    border-top: 5px solid #00223f;
+}
+
+footer li {
+    list-style-type: none;
+}
+
+footer li a {
+    color: #e2e2e2;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+.col_left, .col_right {
+    background: #e2e2e2;
+    height: 460px;
+    margin: 20px;
+    border: 5px solid #00223F;
+    border-radius: 20px;
+    text-align: center;
+    overflow: hidden;
+}
+
+section img {
+    max-width: 100%;
+    border-bottom: 5px solid #00223F;
+}
+
+.col_left {
+    grid-column: 1 / 2;
+}
+
+.col_right {
+    grid-column: 2 / 3;
+}
+
+/*----------About Me Page----------*/
+
+#content {
+    grid-column: 1 / 4;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    text-align: center;
+}
+
+#info {
+    grid-column: 1/6;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    border: 5px solid #00223F;
+    background: #207033;
+}
+
+h2 {
+    grid-column: 2/6;
+    font-size: 4em;
+    color: #e2e2e2;
+    text-shadow: 4px 4px 2px black;
+}
+
+#bboi {
+    height: 150px;
+    width: 150px;
+    border: 5px solid #00223F;
+    border-radius: 50%;
+    overflow: hidden;
+    grid-column: 1/2
+}
+
+#misc {
+    grid-column: 1/3;
+    width: 100%;
+}
+
+h3 {
+    grid-column: 3/6;
+    color: #e2e2e2;
+    text-shadow: 4px 4px 2px black;
+    float: left;
+    margin: 3px;
+}
+
+h4 {
+    color: #e2e2e2;
+    font-size: 2em;
+    text-shadow: 4px 4px 2px black;
+    grid-column:1/3;
+    float: left;
+}
+
+/*----About Me Table----*/
+
+table.blueninjatable {
+    font-family: Georgia, serif;
+    border-left: 5px solid #00223F;
+    border-right: 5px solid #00223F;
+    border-bottom: 5px solid #00223F;
+    background-color: #1B5882;
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+    grid-column: 2/6;
+}
+
+table.blueninjatable td,
+table.blueninjatable th {
+    border: 2px solid #00223F;
+    padding: 5px 4px;
+    text-align: center;
+    text-Shadow: 4px 4px 2px black;
+}
+
+table.blueninjatable tbody td {
+    font-size: 25px;
+    color: #E2E2E2;
+    text-align: center;
+    text-Shadow: 4px 4px 2px black;
+}
+
+table.blueninjatable thead {
+    background: #207033;
+    text-align: center;
+    text-Shadow: 4px 4px 2px black;
+}
+
+table.blueninjatable thead th {
+    font-size: 20px;
+    font-weight: bold;
+    color: #E2E2E2;
+    text-align: center;
+    border-left: 2px solid #00223F;
+}
+
+table.blueninjatable thead th:first-child {
+    border-left: none;
+}
+
+table.blueninjatable tfoot td {
+    font-size: 16px;
+}
+
+/*----------ICE Challenges Page----------*/
+
+#icecontent {
+    grid-column: 1/3;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    justify-content: center;
+    padding: 20px;
+    font-size: .5em;
+}
+
+.icecards {
+    width: 100%;
+    height: auto;
+    background: #e2e2e2;
+    border: 5px solid #00223F;
+    border-radius: 20px;
+    text-align: center;
+    overflow: hidden;
+    text-align: left;
+}
+
+.icecards img {
+    width: 100%;
+    border-bottom: 5px solid #00223F;
+}
+
+h1 {
+    margin: 3px;
+}
+
+/*----------Size Change Depending on Type of Device----------*/
+
+@media (max-width: 787px) {
+
+    main,
+    #wrapper,
+    nav,
+    footer {
+        display: block;
+    }
+
+    #wrapper {
+        min-height: unset;
+    }
+
+    main #ads {
+        position: unset;
+        width: 100%;
+    }
+
+    nav {
+        height: unset;
+    }
+
+    nav a {
+        width: 100%;
+        justify-content: center;
+        padding: 0;
+        border: 2px solid #00223f;
+    }
+
+    header {
+        padding: 0;
+        text-align: center;
+    }
+
+    header h1 {
+        float: none;
+        font-size: 2em;
+        margin: 0;
+    }
+
+    header img {
+        position: absolute;
+        top: 15px;
+        left: 7px;
+        width: 30%;
+    }
+
+    section {
+        height: unset;
+    }
+}
+
+@media (max-width: 530px) {
+    header-img {
+        display: none;
+    }
+}
